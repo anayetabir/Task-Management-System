@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const taskSchema = new mongoose.Schema({
+const feedbackSchema = new mongoose.Schema({
     title: {
         type: String,
        
@@ -19,6 +19,6 @@ const taskSchema = new mongoose.Schema({
     },
 })
 
-const Task = mongoose.model("Task", taskSchema)
+const feedback = mongoose.model("feedback", feedbackSchema)
 
-module.exports = Task;
+module.exports = feedback;
