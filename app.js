@@ -3,7 +3,7 @@ const cors = require("cors")
 const dbConnection = require("./src/utils/dbConnection")
 const router = require("./src/routes/Api")
 const app = express()
-const port = 8000
+const port = 5000
 
 
 //middleware
