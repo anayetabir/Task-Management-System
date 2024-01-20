@@ -5,19 +5,19 @@ const feedbackSchema = new mongoose.Schema({
         type: String,
        
     },
-    description: {
+    details: {
         type: String,
         
     },
-    status: {
-        type: String,
-        
-    },
-    dueDate: {
-        type: String,
-        
-    },
-})
+    like: {
+        type: Number,
+        default: 0   
+    }
+},{
+    timestamps: true,
+    versionKey: false
+}
+)
 
 const feedback = mongoose.model("feedback", feedbackSchema)
 
